@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- CONFIGURACIÓN BÁSICA -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    
+    <!-- HOJAS DE ESTILO -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- LIGHTBOX -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <!-- ESTILO TEMPORAL PARA IMÁGENES -->
+    <style>
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        
+        .portfolio-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.5s ease;
+        }
+        
+        .portfolio-item:hover img {
+            transform: scale(1.03);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .item-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.7));
+            color: white;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .portfolio-item:hover .item-overlay {
+            opacity: 1;
+        }
+        
+        /* Efecto de clic */
+        .portfolio-item:active img {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1><a href="index.html">Melany Barba Bejarano</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                    <li><a href="sobremi.html">Sobre mí</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li class="instagram-icon">
+                        <a href="https://www.instagram.com/melany_con_igriega/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- SECCIÓN PORTAFOLIO CON IMÁGENES -->
+    <section id="portfolio" class="portfolio">
+        <div class="section-title">
+            <h3>Pinturas</h3>
+        </div>
+        <div class="portfolio-grid">
+
+            <!-- Obra 7 -->
+            <div class="portfolio-item">
+                <a href="images/amanecer.webp" title="Amanecer - Acrílico sobre lienzo | 2025">
+                    <img src="images/amanecer.webp" alt="Amanecer">
+                </a>
+                <div class="item-overlay">
+                    <h4>Amanecer</h4>
+                    <p>Acrílico sobre lienzo | 2025</p>
+                </div>
+            </div>
+            
+            <!-- Obra 6 -->
+            <div class="portfolio-item">
+                <a href="images/sostener-y-soltar.webp" title="Sostener y soltar - Acrílico y espátula | 2025">
+                    <img src="images/sostener-y-soltar.webp" alt="Sostener y soltar">
+                </a>
+                <div class="item-overlay">
+                    <h4>Sostener y soltar</h4>
+                    <p>Acrílico y espátula | 2025</p>
+                </div>
+            </div>
+            
+            <!-- Obra 5 -->
+            <div class="portfolio-item">
+                <a href="images/cuando-la-luna-florece.webp" title="Cuando La Luna Florece - Acrílico y espátula | 2025">
+                    <img src="images/cuando-la-luna-florece.webp" alt="Cuando La Luna Florece">
+                </a>
+                <div class="item-overlay">
+                    <h4>Cuando La Luna Florece</h4>
+                    <p>Acrílico y espátula | 2025</p>
+                </div>
+            </div>
+
+            <!-- Obra 4 -->
+            <div class="portfolio-item">
+                <a href="images/margaritas.webp" title="Margaritas - Acrílico y espátula | 2024">
+                    <img src="images/margaritas.webp" alt="Margaritas">
+                </a>
+                <div class="item-overlay">
+                    <h4>Margaritas</h4>
+                    <p>Acrílico y espátula | 2024</p>
+                </div>
+            </div>
+
+            <!-- Obra 3 -->
+            <div class="portfolio-item">
+                <a href="images/atardecer.webp" title="Atardecer - Acrílico sobre lienzo | 2024">
+                    <img src="images/atardecer.webp" alt="Atardecer">
+                </a>
+                <div class="item-overlay">
+                    <h4>Atardecer</h4>
+                    <p>Acrílico sobre lienzo | 2024</p>
+                </div>
+            </div>
+
+            <!-- Obra 2 -->
+            <div class="portfolio-item">
+                <a href="images/mariposa.webp" title="Mariposa - Acrílico sobre lienzo | 2024">
+                    <img src="images/mariposa.webp" alt="Mariposa">
+                </a>
+                <div class="item-overlay">
+                    <h4>Mariposa</h4>
+                    <p>Acrílico sobre lienzo | 2024</p>
+                </div>
+            </div>
+            
+            <!-- Obra 1 
+            <div class="portfolio-item">
+                <a href="images/cual-espacio.jpeg" title="¿Cuál espacio? - Acrílico sobre lienzo | 2023">
+                    <img src="images/cual-espacio.jpeg" alt="¿Cuál espacio?">
+                </a>
+                <div class="item-overlay">
+                    <h4>¿Cuál espacio?</h4>
+                    <p>Acrílico sobre lienzo | 2023</p>
+                </div>
+            </div>
+        </div> -->
+        
+    </section>
+    
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="footer-rows">
+            <div class="footer-row">
+                <h4>Melany Barba Bejarano</h4>
+            </div>
+            <div class="footer-row">
+                <h4>melanybb.art@gmail.com</h4>
+            </div>
+            <div class="footer-row">
+                <div class="social-links">
+                    <a href="https://www.instagram.com/melany_con_igriega/" target="_blank">
+                        <i class="fab fa-instagram"></i> 
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Melany Barba Bejarano. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    
+    <script>
+        // Lightbox para las imágenes
+        $(document).ready(function() {
+            $('.portfolio-item a').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300
+                },
+                image: {
+                    titleSrc: function(item) {
+                        return item.el.attr('title');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+/* ========== Contact (Versión Simplificada con Gmail) ========== */
+.contact {
+    padding: 5rem 5%;
+    background-color: #f9f9f9; /* Agregado para fondo claro */
+    text-align: center; /* Centrado general */
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Eliminado: .contact-form, .form-group (ya no se usan) */
+
+/* Nuevos estilos para la versión Gmail */
+.gmail-contact {
+    background: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    margin-top: 2rem;
+}
+
+.email-address {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2b4770; /* Rojo Gmail */
+    margin: 1.5rem 0;
+    word-break: break-all;
+}
+
+.gmail-btn {
+    display: inline-block;
+    background: #2b4770;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.gmail-btn i {
+    margin-right: 0.5rem;
+}
+
+.gmail-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(53, 74, 234, 0.3);
+    background: #2b4770;
+}
+
+.small-text {
+    font-size: 0.85rem;
+    color: #999;
+    margin-top: 1.5rem;
+    font-style: italic;
+}
+
+/* Responsive (conservando tu estructura) */
+@media (max-width: 768px) {
+    .contact {
+        padding: 3rem 5%;
+    }
+    
+    .gmail-contact {
+        padding: 2rem;
+    }
+    
+    .gmail-btn {
+        padding: 0.8rem 1.5rem;
+    }
+}

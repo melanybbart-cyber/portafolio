@@ -1,0 +1,106 @@
+/* ========== About (Estilo Limpio y Responsive) ========== */
+.about {
+    padding: 5rem 5%;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-img img {
+    width: 70%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto; /* ✅ ESTA LÍNEA FALTABA */
+}
+
+.about-text h3 {
+   font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: #2b4770;
+    position: relative;
+    padding-bottom: 1rem; 
+}
+
+.about-text h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #2b4770;
+    border-radius: 2px;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    color: #555;
+    line-height: 1.7;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+.about-cta {
+    display: inline-block;
+    background: #2b4770;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.about-cta:hover {
+    transform: translateY(-2px);
+}
+
+/* MÓVIL: imagen arriba, texto abajo */
+@media (max-width: 768px) {
+    .about {
+        padding: 3rem 5%;
+    }
+    
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    
+    .about-img {
+        order: -1;
+    }
+    
+    .about-text h3 {
+        text-align: center;
+    }
+    
+    .about-text h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .about-text p {
+        text-align: justify;
+    }
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    margin-top: 0;
+    padding-top: 0;
+}
