@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- 
+    DOCUMENTACIÓN GENERAL:
+    Este es un sitio web de portafolio para Melany Barba Bejarano.
+    Estructura modular con secciones separadas en archivos CSS.
+    Puedes modificar: textos, imágenes, enlaces y estructura básica.
+    No modificar: estructura principal, clases principales y IDs.
+-->
+
+<head>
+    <!-- CONFIGURACIÓN BÁSICA -->
+    <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <title>Melany Barba Bejarano</title> <!-- Título de la pestaña - MODIFICABLE -->
+    
+    <!-- HOJAS DE ESTILO (Puedes agregar más si necesitas) -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Estilos generales -->
+    <link rel="stylesheet" href="css/header.css"> <!-- Estilos del encabezado -->
+    <link rel="stylesheet" href="css/hero.css"> <!-- Estilos de la sección hero -->
+    <link rel="stylesheet" href="css/portfolio.css"> <!-- Estilos del portafolio -->
+    <link rel="stylesheet" href="css/about.css"> <!-- Estilos sobre mí -->
+    <link rel="stylesheet" href="css/contact.css"> <!-- Estilos de contacto -->
+    <link rel="stylesheet" href="css/footer.css"> <!-- Estilos del pie de página -->
+    
+    <!-- ICONOS (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+   <!-- ENCABEZADO (HEADER) -->
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <h1><a href="index.html">Melany Barba Bejarano</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/portafolio/">Portafolio</a></li>
+                <li><a href="/sobremi/">Sobre mí</a></li>
+                <li><a href="/contacto/">Contacto</a></li>
+                <li class="instagram-icon">
+                    <a href="https://www.instagram.com/melany_con_igriega/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <!-- SECCIÓN HERO --> 
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Melany Barba Bejarano</h2>
+            <p>Explora mi mundo creativo</p>
+        </div>
+    </section>
+    
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption"></div>
+    </div>
+
+
+    </header> 
+    
+<!-- SECCIÓN SOBRE MÍ 
+         MODIFICABLE: Todo el texto, imagen, estructura de párrafos
+         NO MODIFICAR: Clases principales -->
+    <section id="about" class="about">
+        <div class="about-container">
+               <div class="about-img">
+               <img src="images/artista.jpg" alt="Retrato del artista"> 
+               </div>
+            <div class="about-text">
+                <h3>Sobre Mí</h3> <!-- Título sección - MODIFICABLE -->
+                <!-- Texto sobre mí - MODIFICABLE (puedes agregar más párrafos) -->
+                <p>Melany Dianne Barba Bejarano,
+                originaria de Ciudad Cuauhtémoc, Chihuahua (2002), es una artista visual centrada en la narrativa simbólica e introspectiva,
+                autodidacta y dedicada a la pintura a través de acrílico y técnica mixta. Construye un lenguaje en el que lo íntimo dialoga con lo colectivo,
+                representando la tensión entre lo que se rompe y lo que florece. Encuentra inspiración en su diario, en la poesía y en sus procesos de transformación personal.
+                </p>
+                <p>Ha participado en concursos y encuentros de pintura a nivel regional y consolida su crecimiento con una participación confirmada en el Encuentro Nacional de Arte y Cultura del TecNM 2025, a celebrarse en Acapulco, Guerrero.
+                 Actualmente combina sus estudios universitarios con proyectos artísticos que fortalecen su búsqueda creativa y personal.</p>
+            </div>
+         </div>
+    </section>
+
+
+   <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="footer-rows">
+            <div class="footer-row">
+                <h4>Melany Barba Bejarano</h4>
+            </div>
+            <div class="footer-row">
+                <h4>melanybb.art@gmail.com</h4>
+            </div>
+            <div class="footer-row">
+                <div class="social-links">
+                    <a href="https://www.instagram.com/melany_con_igriega/" target="Instagram">
+                        <i class="fab fa-instagram"></i> 
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Melany Barba Bejarano. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
