@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio</title>
+
+  <!-- HOJAS DE ESTILO -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/hero.css">
+  <link rel="stylesheet" href="/css/portfolio.css">
+  <link rel="stylesheet" href="/css/about.css">
+  <link rel="stylesheet" href="/css/contact.css">
+  <link rel="stylesheet" href="/css/footer.css">
+
+  <!-- ICONOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- LIGHTBOX -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+</head>
+
+<body>
+  <!-- ENCABEZADO -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <h1><a href="/">Melany Barba Bejarano</a></h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/portafolio/">Portafolio</a></li>
+          <li><a href="/sobremi/">Sobre mí</a></li>
+          <li><a href="/contacto/">Contacto</a></li>
+          <li class="instagram-icon">
+            <a href="https://www.instagram.com/melany_con_igriega/" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SECCIÓN PORTAFOLIO -->
+  <section id="portfolio" class="portfolio">
+    <div class="section-title">
+      <h3>Pinturas</h3>
+    </div>
+    <div class="portfolio-grid">
+
+      <!-- Obra 6 -->
+      <div class="portfolio-item">
+        <a href="/images/amanecer.webp" 
+        title="Amanecer - Acrílico sobre lienzo | 2025">
+          <img src="/images/amanecer.webp" alt="Amanecer">
+        </a>
+        <div class="item-overlay">
+          <h4>Amanecer</h4>
+          <p>Acrílico sobre lienzo | 2025</p>
+        </div>
+      </div>
+            <!-- Obra 5 -->
+      <div class="portfolio-item">
+        <a href="/images/sostener-y-soltar.webp" 
+        title="Sostener y soltar - Acrílico y espátula | 2025">
+          <img src="/images/sostener-y-soltar_.webp" alt="Sostener y soltar">
+        </a>
+        <div class="item-overlay">
+          <h4>Sostener y soltar</h4>
+          <p>Acrílico y espátula | 2025</p>
+        </div>
+      </div>
+
+           <!-- Obra 4 -->
+      <div class="portfolio-item">
+        <a href="/images/cuando-la-luna-florece.webp"
+          title="Cuando La Luna Florece - Acrílico y espátula | 2025">
+          <img src="/images/cuando-la-luna-florece_.webp" alt="Cuando La Luna Florece">
+        </a>
+        <div class="item-overlay">
+          <h4>Cuando La Luna Florece</h4>
+          <p>Acrílico y espátula | 2025</p>
+        </div>
+      </div>
+
+      <!-- Obra 3 -->
+      <div class="portfolio-item">
+        <a href="/images/margaritas.webp" title="Margaritas - Acrílico y espátula | 2024">
+          <img src="/images/margaritas.webp" alt="Margaritas">
+        </a>
+        <div class="item-overlay">
+          <h4>Margaritas</h4>
+          <p>Acrílico y espátula | 2024</p>
+        </div>
+      </div>
+
+      <!-- Obra 2 -->
+      <div class="portfolio-item">
+        <a href="/images/atardecer.webp" title="Atardecer - Acrílico sobre lienzo | 2024">
+          <img src="/images/atardecer.webp" alt="Atardecer">
+        </a>
+        <div class="item-overlay">
+          <h4>Atardecer</h4>
+          <p>Acrílico sobre lienzo | 2024</p>
+        </div>
+      </div>
+
+       <!-- Obra 1 -->
+      <div class="portfolio-item">
+        <a href="/images/mariposa.webp" title="Mariposa - Acrílico sobre lienzo | 2024">
+          <img src="/images/mariposa.webp" alt="Mariposa">
+        </a>
+        <div class="item-overlay">
+          <h4>Mariposa</h4>
+          <p>Acrílico sobre lienzo | 2024</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <div class="footer-rows">
+      <div class="footer-row">
+        <h4>Melany Barba Bejarano</h4>
+      </div>
+      <div class="footer-row">
+        <h4>melanybb.art@gmail.com</h4>
+      </div>
+      <div class="footer-row">
+        <div class="social-links">
+          <a href="https://www.instagram.com/melany_con_igriega/" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Melany Barba Bejarano. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+<!-- SCRIPTS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $('.portfolio-item a').magnificPopup({
+      type: 'image',
+      gallery: { enabled: true },
+      zoom: { enabled: true, duration: 300 },
+      image: { titleSrc: item => item.el.attr('title') }
+    });
+  });
+</script>
+</body>
+
+</html>
