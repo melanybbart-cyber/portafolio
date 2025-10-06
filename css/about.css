@@ -103,4 +103,19 @@ body, html {
 .hero {
     margin-top: 0;
     padding-top: 0;
+
+}
+
+/*Nuevo ccs para exposicion-destacada */
+
+.exposicion-destacada a {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    color: #2b4770;
+    transition: all 0.3s ease;
+}
+
+.exposicion-destacada a:hover {
+    color: #000000;
 }
