@@ -8,13 +8,10 @@
     <title>Sobre mí</title>
     
     <!-- HOJAS DE ESTILO -->
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/hero.css">
-    <link rel="stylesheet" href="/css/portfolio.css">
-    <link rel="stylesheet" href="/css/about.css">
-    <link rel="stylesheet" href="/css/contact.css">
-    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/footer.css">
 
     <!-- ICONOS (Font Awesome) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -29,9 +26,12 @@
            </div>
            <nav>
                <ul>
-                   <li><a href="/portafolio/">Portafolio</a></li>
-                   <li><a href="/sobremi/">Sobre mí</a></li>
-                   <li><a href="/contacto/">Contacto</a></li>
+                  <!-- Rutas desde la carpeta actual "sobremi/" -->
+                   <li><a href="../portafolio/">Portafolio</a></li>
+                   <li><a href="./" aria-current="page">Sobre mí</a></li>
+                   <li><a href="../contacto/">Contacto</a></li>
+
+
                    <li class="instagram-icon">
                        <a href="https://www.instagram.com/melany_con_igriega/" 
                           target="_blank" rel="noopener noreferrer" aria-label="Instagram">
@@ -47,13 +47,14 @@
    <section id="about" class="about">
        <div class="about-container">
            <div class="about-img">
-               <img src="/images/artista.jpg" alt="Retrato del artista"> 
+               <img src="../images/artista.jpg" alt="Retrato del artista">
            </div>
            <div class="about-text">
                <h3>Sobre Mí</h3>
-                <p>
-                Melany Dianne Barba Bejarano, originaria de Ciudad Cuauhtémoc, Chihuahua (2002),
-                 es una artista visual centrada en la narrativa simbólica e introspectiva, autodidacta y dedicada a la pintura a través de acrílico y técnica mixta.
+              <p>
+                Melany Dianne Barba Bejarano, originaria de Ciudad Cuauhtémoc, Chihuahua (2002), 
+                es una artista visual autodidacta centrada en la narrativa simbólica e introspectiva, 
+                dedicada a la pintura con acrílico y técnica mixta.
                </p>
                 <p>
                 Desarrolla un lenguaje en el que lo íntimo dialoga con lo colectivo, explorando la tensión entre lo que se rompe y lo que florece.
@@ -61,15 +62,19 @@
                </p>
                 <p>
                 Ha participado en concursos y encuentros de pintura a nivel regional,
-                y actualmente impulsa su trayectoria hacia nuevas dimensiones con su próxima participación en la exposición colectiva <em>Trazos de los que fueron</em>,
-                a celebrarse en octubre de 2025 en Viena, Austria, marcando el inicio de su proyección internacional. Del mismo modo,
-                será parte del <em>Encuentro Nacional de Arte y Cultura del TecNM 2025</em>, que tendrá lugar en noviembre en Acapulco, Guerrero,
+                y actualmente impulsa su trayectoria hacia nuevas dimensiones con su próxima participación en la exposición colectiva
+               
+                <span class="exposicion-destacada">
+                <a href="https://www.lichtraumbysoniasiblik.com/basementartbylichtraum/spurerdererdiewaren" target="_blank" rel="noopener noreferrer">Trazos de los que fueron</a>
+                </span>
+                , a celebrarse en octubre de 2025 en Viena, Austria, marcando el inicio de su proyección internacional. Del mismo modo,
+                será parte del <em>Encuentro Nacional de Arte y Cultura del TecNM 2025, que tendrá lugar en noviembre en Acapulco</em>, Guerrero,
                 consolidando su reconocimiento dentro del panorama artístico nacional.
                </p>
                <p>
                 Actualmente combina sus estudios universitarios con proyectos artísticos que fortalecen su búsqueda creativa y personal.
                 Su obra busca ser un puente donde la vulnerabilidad se transforme en fuerza y la intimidad florezca en lo universal.
-               </p>
+               </p>   
            </div>
        </div>
    </section>
@@ -98,6 +103,3 @@
    </footer>
 </body>
 </html>
-
-
-
